@@ -1,0 +1,19 @@
+<Prefab>
+  <Window>
+    <Widget DoNotAcceptEvents="true" 
+            WidthSizePolicy="StretchToParent" 
+            HeightSizePolicy="StretchToParent">
+      <Children>
+        <ListPanel Id="EnemyBoxContainer" 
+                   DataSource="{Enemies}"
+                   WidthSizePolicy="StretchToParent" 
+                   HeightSizePolicy="StretchToParent"
+                   StackLayout.LayoutMethod="None">
+          <ItemTemplate>
+            <ESPEnemyBoxWidget/>
+          </ItemTemplate>
+        </ListPanel>
+      </Children>
+    </Widget>
+  </Window>
+</Prefab>
