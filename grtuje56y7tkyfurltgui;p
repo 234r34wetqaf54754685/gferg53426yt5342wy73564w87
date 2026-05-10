@@ -1,0 +1,67 @@
+<Prefab>
+  <Window>
+    <Widget WidthSizePolicy="Fixed" 
+            HeightSizePolicy="Fixed"
+            SuggestedWidth="@Width"
+            SuggestedHeight="@Height"
+            PositionXOffset="@PositionX"
+            PositionYOffset="@PositionY"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top">
+      <Children>
+        <!-- Бордер бокса -->
+        <Widget WidthSizePolicy="StretchToParent"
+                HeightSizePolicy="StretchToParent">
+          <Children>
+            <!-- Верхняя линия -->
+            <Widget WidthSizePolicy="StretchToParent"
+                    HeightSizePolicy="Fixed"
+                    SuggestedHeight="2"
+                    VerticalAlignment="Top"
+                    Sprite="BlankWhiteSquare_9"
+                    Color="@IsFocus ? #FFFF0000 : #FFFFFFFF"/>
+            <!-- Нижняя линия -->
+            <Widget WidthSizePolicy="StretchToParent"
+                    HeightSizePolicy="Fixed"
+                    SuggestedHeight="2"
+                    VerticalAlignment="Bottom"
+                    Sprite="BlankWhiteSquare_9"
+                    Color="@IsFocus ? #FFFF0000 : #FFFFFFFF"/>
+            <!-- Левая линия -->
+            <Widget WidthSizePolicy="Fixed"
+                    SuggestedWidth="2"
+                    HeightSizePolicy="StretchToParent"
+                    HorizontalAlignment="Left"
+                    Sprite="BlankWhiteSquare_9"
+                    Color="@IsFocus ? #FFFF0000 : #FFFFFFFF"/>
+            <!-- Правая линия -->
+            <Widget WidthSizePolicy="Fixed"
+                    SuggestedWidth="2"
+                    HeightSizePolicy="StretchToParent"
+                    HorizontalAlignment="Right"
+                    Sprite="BlankWhiteSquare_9"
+                    Color="@IsFocus ? #FFFF0000 : #FFFFFFFF"/>
+          </Children>
+        </Widget>
+        
+        <!-- Текст имени -->
+        <TextWidget WidthSizePolicy="CoverChildren"
+                    HeightSizePolicy="CoverChildren"
+                    Text="@Name"
+                    Brush="Clan.RoleName.Text"
+                    VerticalAlignment="Top"
+                    HorizontalAlignment="Center"
+                    PositionYOffset="-18"/>
+        
+        <!-- HP -->
+        <TextWidget WidthSizePolicy="CoverChildren"
+                    HeightSizePolicy="CoverChildren"
+                    Text="@Health"
+                    Brush="Clan.RoleName.Text"
+                    VerticalAlignment="Bottom"
+                    HorizontalAlignment="Center"
+                    PositionYOffset="2"/>
+      </Children>
+    </Widget>
+  </Window>
+</Prefab>
