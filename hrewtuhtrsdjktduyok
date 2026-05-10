@@ -1,0 +1,37 @@
+<Prefab>
+  <Window>
+    <Widget WidthSizePolicy="Fixed" 
+            HeightSizePolicy="Fixed"
+            SuggestedWidth="120"
+            SuggestedHeight="60"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top">
+      <Children>
+        <!-- Рамка бокса -->
+        <Widget WidthSizePolicy="StretchToParent"
+                HeightSizePolicy="StretchToParent"
+                Sprite="BlankWhiteSquare"
+                Color="#FF000000"
+                AlphaFactor="0.4"/>
+        <!-- Имя врага -->
+        <TextWidget Id="EnemyName"
+                    WidthSizePolicy="StretchToParent"
+                    HeightSizePolicy="Fixed"
+                    SuggestedHeight="20"
+                    Text="Enemy"
+                    Brush="SPGeneral.Title"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Top"/>
+        <!-- HP -->
+        <TextWidget Id="EnemyHP"
+                    WidthSizePolicy="StretchToParent"
+                    HeightSizePolicy="Fixed"
+                    SuggestedHeight="20"
+                    Text="100/100"
+                    Brush="SPGeneral.Title"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Bottom"/>
+      </Children>
+    </Widget>
+  </Window>
+</Prefab>
